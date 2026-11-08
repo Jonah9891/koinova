@@ -450,29 +450,103 @@ button, input, select, textarea {
 }
 
 .card-icon {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: var(--space-4);
-  font-size: 1.5rem;
+  font-size: 1.65rem;
+  line-height: 1;
+  position: relative;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  border: 1px solid transparent;
 }
 
+/* Gradient Emoji Icon Badges tailored to each theme and color family */
 .icon-blue {
-  background: rgba(37, 99, 235, 0.12);
-  color: var(--link);
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.16), rgba(29, 78, 216, 0.05));
+  border-color: rgba(37, 99, 235, 0.25);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
 }
 
 .icon-emerald {
-  background: rgba(13, 155, 114, 0.12);
-  color: var(--success-text);
+  background: linear-gradient(135deg, rgba(13, 155, 114, 0.18), rgba(10, 122, 90, 0.05));
+  border-color: rgba(13, 155, 114, 0.3);
+  box-shadow: 0 4px 12px rgba(13, 155, 114, 0.1);
 }
 
 .icon-gold {
-  background: rgba(214, 173, 96, 0.15);
-  color: var(--accent-text);
+  background: linear-gradient(135deg, rgba(214, 173, 96, 0.22), rgba(184, 142, 62, 0.06));
+  border-color: rgba(214, 173, 96, 0.35);
+  box-shadow: 0 4px 12px rgba(214, 173, 96, 0.12);
+}
+
+/* Dark theme gradient glow enhancements for icons */
+[data-theme="dark"] .icon-blue {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.28), rgba(29, 78, 216, 0.12));
+  border-color: rgba(127, 168, 255, 0.35);
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.25);
+}
+
+[data-theme="dark"] .icon-emerald {
+  background: linear-gradient(135deg, rgba(13, 155, 114, 0.3), rgba(61, 214, 163, 0.12));
+  border-color: rgba(61, 214, 163, 0.4);
+  box-shadow: 0 4px 16px rgba(13, 155, 114, 0.25);
+}
+
+[data-theme="dark"] .icon-gold {
+  background: linear-gradient(135deg, rgba(214, 173, 96, 0.32), rgba(184, 142, 62, 0.15));
+  border-color: rgba(214, 173, 96, 0.45);
+  box-shadow: 0 4px 16px rgba(214, 173, 96, 0.25);
+}
+
+/* Light theme gradient enhancements for crisp clarity */
+[data-theme="light"] .icon-blue {
+  background: linear-gradient(135deg, #EFF6FF, #DBEAFE);
+  border-color: #BFDBFE;
+}
+
+[data-theme="light"] .icon-emerald {
+  background: linear-gradient(135deg, #ECFDF5, #D1FAE5);
+  border-color: #A7F3D0;
+}
+
+[data-theme="light"] .icon-gold {
+  background: linear-gradient(135deg, #FFFBEB, #FEF3C7);
+  border-color: #FDE68A;
+}
+
+/* Card hover reaction */
+.card:hover .card-icon {
+  transform: scale(1.08) translateY(-2px);
+}
+
+/* Empty State Icon styling */
+.empty-state-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-lg);
+  margin: 0 auto var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  line-height: 1;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(214, 173, 96, 0.12));
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+[data-theme="dark"] .empty-state-icon {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.25), rgba(214, 173, 96, 0.2));
+  border-color: #263558;
+}
+
+[data-theme="light"] .empty-state-icon {
+  background: linear-gradient(135deg, #F0FDF4, #EFF6FF);
+  border-color: #DDE3EC;
 }
 
 /* 8. Chips & Badges */
