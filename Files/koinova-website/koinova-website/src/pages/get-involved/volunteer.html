@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <!-- @include head -->
+  <title>Volunteer With KOINOVA</title>
+  <meta name="description" content="Offer your skills and time to help build KOINOVA, from technology and design to events, communications and partnerships.">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- @include header -->
+
+  <main id="main-content">
+    <section class="section section-subtle" style="border-bottom: 1px solid var(--border); padding-top: var(--space-16); padding-bottom: var(--space-12);">
+      <div class="container container-narrow">
+        <nav aria-label="Breadcrumb" style="margin-bottom: var(--space-4); font-size: 0.875rem;">
+          <a href="/">Home</a> <span aria-hidden="true" style="opacity: 0.5;">/</span> 
+          <a href="/get-involved">Get Involved</a> <span aria-hidden="true" style="opacity: 0.5;">/</span> 
+          <span style="color: var(--text);">Volunteer</span>
+        </nav>
+        <span class="eyebrow">Service &amp; Contribution</span>
+        <h1 style="margin: var(--space-3) 0 var(--space-4);">Volunteer With <span class="gradient-text-blue">Us</span></h1>
+        <p class="lead-text">
+          KOINOVA is being built by people who care about its mission. If you would like to contribute your time and skills, we would like to hear from you.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" style="border-bottom: 1px solid var(--border);">
+      <div class="container container-narrow">
+        <!-- Where we need help list -->
+        <div class="card" style="padding: var(--space-6); margin-bottom: var(--space-8);">
+          <h2 style="font-size: 1.15rem; margin-bottom: var(--space-3);">Where we need help</h2>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <span class="chip">Technology &amp; website development</span>
+            <span class="chip">Design &amp; branding</span>
+            <span class="chip">Content writing &amp; editing</span>
+            <span class="chip">Social media &amp; communications</span>
+            <span class="chip">Event planning &amp; hosting</span>
+            <span class="chip">Research &amp; community building</span>
+            <span class="chip">Partnerships &amp; outreach</span>
+            <span class="chip">Mentorship &amp; advisory support</span>
+            <span class="chip">Leadership &amp; governance support</span>
+          </div>
+          <p style="margin-top: var(--space-4); font-size: 0.875rem; color: var(--text-muted);">
+            Volunteer roles are shaped around your skills and availability. We will be clear about what is expected and will recognise your contribution.
+          </p>
+        </div>
+
+        <!-- Volunteer Application Form -->
+        <form class="card" style="padding: var(--space-8);" method="POST" action="/api/volunteer">
+          <div style="display:none;" aria-hidden="true">
+            <input type="text" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <h2 style="font-size: var(--text-2xl); margin-bottom: var(--space-6);">Volunteer Application</h2>
+
+          <div class="form-group">
+            <label class="form-label" for="vol-name">Full name <span style="color: #C62828;">*</span></label>
+            <input type="text" id="vol-name" name="full_name" class="input-field" required placeholder="Your full name">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="vol-email">Email address <span style="color: #C62828;">*</span></label>
+            <input type="email" id="vol-email" name="email" class="input-field" required placeholder="name@example.com">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="vol-country">Country <span style="color: #C62828;">*</span></label>
+            <input type="text" id="vol-country" name="country" class="input-field" required placeholder="Country of residence">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Skills you want to offer (select all that apply)</label>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--space-2); margin-top: 4px;">
+              <label class="checkbox-label">
+                <input type="checkbox" name="skills" value="tech" class="checkbox-input">
+                <span>Technology &amp; development</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="skills" value="design" class="checkbox-input">
+                <span>Design &amp; branding</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="skills" value="writing" class="checkbox-input">
+                <span>Writing &amp; editing</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="skills" value="social" class="checkbox-input">
+                <span>Social media &amp; comms</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="skills" value="events" class="checkbox-input">
+                <span>Events</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="skills" value="research" class="checkbox-input">
+                <span>Research &amp; community</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="skills" value="partnerships" class="checkbox-input">
+                <span>Partnerships</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="skills" value="mentorship" class="checkbox-input">
+                <span>Mentorship</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="vol-hours">Hours per week available</label>
+            <input type="text" id="vol-hours" name="hours_per_week" class="input-field" placeholder="e.g. 2–5 hours / week">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="vol-note">Short note on why you want to volunteer <span style="color: #C62828;">*</span></label>
+            <textarea id="vol-note" name="note" class="textarea-field" rows="3" required placeholder="Share your background and motivation..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="vol-link">LinkedIn or portfolio link (optional)</label>
+            <input type="url" id="vol-link" name="profile_link" class="input-field" placeholder="https://...">
+          </div>
+
+          <div class="form-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="privacy" class="checkbox-input" required>
+              <span>I have read and agree to the <a href="/privacy-policy" target="_blank">Privacy Policy</a> <span style="color: #C62828;">*</span></span>
+            </label>
+          </div>
+
+          <div class="form-feedback" aria-live="polite" style="margin-bottom: var(--space-4);"></div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 14px 28px;">
+            SUBMIT APPLICATION
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- @include footer -->
+</body>
+</html>
+

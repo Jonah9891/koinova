@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <!-- @include head -->
+  <title>Join KOINOVA | Become a Founding Member</title>
+  <meta name="description" content="Join KOINOVA's founding community of Christian technology professionals, founders, researchers and students. Free to register.">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- @include header -->
+
+  <main id="main-content">
+    <section class="section section-subtle" style="border-bottom: 1px solid var(--border); padding-top: var(--space-16); padding-bottom: var(--space-12);">
+      <div class="container container-narrow">
+        <nav aria-label="Breadcrumb" style="margin-bottom: var(--space-4); font-size: 0.875rem;">
+          <a href="/">Home</a> <span aria-hidden="true" style="opacity: 0.5;">/</span> 
+          <a href="/get-involved">Get Involved</a> <span aria-hidden="true" style="opacity: 0.5;">/</span> 
+          <span style="color: var(--text);">Become a Member</span>
+        </nav>
+        <span class="eyebrow">Founding Registration</span>
+        <h1 style="margin: var(--space-3) 0 var(--space-2);">Join <span class="gradient-text-gold">KOINOVA</span></h1>
+        <p class="lead-text" style="font-weight: 700; color: var(--accent-text); margin-bottom: var(--space-4);">
+          Be part of the founding community.
+        </p>
+        <p class="lead-text">
+          KOINOVA is just beginning, and the people who join now will help shape what it becomes. Register to connect with others, hear about programmes and opportunities first, and contribute to a global ecosystem of Christian innovators. Free to register.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" style="border-bottom: 1px solid var(--border);">
+      <div class="container container-narrow">
+        <form class="card" style="padding: var(--space-8); box-shadow: var(--shadow-md);" id="membership-form" method="POST" action="/api/join">
+          <!-- Honeypot -->
+          <div style="display:none;" aria-hidden="true">
+            <input type="text" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <h2 style="font-size: var(--text-2xl); margin-bottom: var(--space-6);">Founding Member Registration</h2>
+
+          <!-- Full Name -->
+          <div class="form-group">
+            <label class="form-label" for="member-name">Full name <span style="color: #C62828;">*</span></label>
+            <input type="text" id="member-name" name="full_name" class="input-field" required placeholder="e.g. Dansu Semawon Jonah" autocomplete="name">
+            <div class="form-error-msg" id="error-full_name"></div>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label class="form-label" for="member-email">Email address <span style="color: #C62828;">*</span></label>
+            <input type="email" id="member-email" name="email" class="input-field" required placeholder="name@example.com" autocomplete="email">
+            <div class="form-error-msg" id="error-email"></div>
+          </div>
+
+          <!-- Country & City -->
+          <div class="grid grid-2" style="gap: var(--space-4); margin-bottom: var(--space-5);">
+            <div>
+              <label class="form-label" for="member-country">Country <span style="color: #C62828;">*</span></label>
+              <input type="text" id="member-country" name="country" class="input-field" required placeholder="Country of residence" autocomplete="country-name">
+              <div class="form-error-msg" id="error-country"></div>
+            </div>
+            <div>
+              <label class="form-label" for="member-city">City (optional)</label>
+              <input type="text" id="member-city" name="city" class="input-field" placeholder="City">
+            </div>
+          </div>
+
+          <!-- Category -->
+          <div class="form-group">
+            <label class="form-label" for="member-category">Membership category <span style="color: #C62828;">*</span></label>
+            <select id="member-category" name="category" class="select-field" required>
+              <option value="">Select your primary category...</option>
+              <option value="professional">Technology professional</option>
+              <option value="founder">Entrepreneur / Founder</option>
+              <option value="student">Student / Emerging talent</option>
+              <option value="researcher">Researcher / Academic</option>
+              <option value="leader">Technology leader / Executive</option>
+              <option value="organisation">Organisation / Institution</option>
+            </select>
+            <div class="form-error-msg" id="error-category"></div>
+          </div>
+
+          <!-- Area of Interest -->
+          <div class="form-group">
+            <label class="form-label">Areas of interest (select all that apply)</label>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: var(--space-2); margin-top: 4px;">
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="software" class="checkbox-input">
+                <span>Software</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="ai" class="checkbox-input">
+                <span>AI &amp; emerging tech</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="entrepreneurship" class="checkbox-input">
+                <span>Entrepreneurship</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="research" class="checkbox-input">
+                <span>Research</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="career" class="checkbox-input">
+                <span>Career development</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="leadership" class="checkbox-input">
+                <span>Leadership</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Collapsible "Tell us more" section -->
+          <details style="margin-bottom: var(--space-6); border: 1px solid var(--border); border-radius: var(--radius-md); padding: var(--space-4);">
+            <summary style="font-weight: 600; cursor: pointer; color: var(--text);">Tell us more (optional details)</summary>
+            
+            <div style="margin-top: var(--space-4);">
+              <div class="form-group">
+                <label class="form-label" for="member-church">Church or denomination</label>
+                <input type="text" id="member-church" name="denomination" class="input-field" placeholder="Optional. Used only to understand our community.">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="member-link">LinkedIn or portfolio link</label>
+                <input type="url" id="member-link" name="profile_link" class="input-field" placeholder="https://linkedin.com/in/...">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="member-gain">What are you hoping to gain or contribute?</label>
+                <textarea id="member-gain" name="motivation" class="textarea-field" rows="3" placeholder="Share a few words..."></textarea>
+              </div>
+            </div>
+          </details>
+
+          <!-- Checkboxes & Consents -->
+          <div class="form-group" style="gap: var(--space-3);">
+            <label class="checkbox-label">
+              <input type="checkbox" name="faith_statement" class="checkbox-input" required>
+              <span>I agree with KOINOVA's <a href="/about/values-and-faith" target="_blank">Statement of Faith and values</a> <span style="color: #C62828;">*</span></span>
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" name="privacy" class="checkbox-input" required>
+              <span>I have read and agree to the <a href="/privacy-policy" target="_blank">Privacy Policy</a> <span style="color: #C62828;">*</span></span>
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" name="marketing_opt_in" class="checkbox-input">
+              <span>I agree to receive community updates, event notices, and programme announcements by email.</span>
+            </label>
+          </div>
+
+          <div class="form-feedback" id="form-feedback" aria-live="polite" style="margin-bottom: var(--space-4);"></div>
+
+          <button type="submit" class="btn btn-cta" style="width: 100%; justify-content: center; font-size: 1.05rem; padding: 14px 28px;">
+            JOIN KOINOVA
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- @include footer -->
+</body>
+</html>
+

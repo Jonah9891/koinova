@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <!-- @include head -->
+  <title>Opportunities for Christians in Tech | KOINOVA</title>
+  <meta name="description" content="Find and share scholarships, training, competitions, grants and other opportunities for Christians in technology and entrepreneurship.">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- @include header -->
+
+  <main id="main-content">
+    <section class="section section-subtle" style="border-bottom: 1px solid var(--border); padding-top: var(--space-16); padding-bottom: var(--space-12);">
+      <div class="container container-narrow">
+        <nav aria-label="Breadcrumb" style="margin-bottom: var(--space-4); font-size: 0.875rem;">
+          <a href="/">Home</a> <span aria-hidden="true" style="opacity: 0.5;">/</span> 
+          <a href="/resources">Resources</a> <span aria-hidden="true" style="opacity: 0.5;">/</span> 
+          <span style="color: var(--text);">Opportunities</span>
+        </nav>
+        <span class="eyebrow">Advancement &amp; Access</span>
+        <h1 style="margin: var(--space-3) 0 var(--space-4);">KOINOVA <span class="gradient-text-blue">Opportunities</span></h1>
+        <p class="lead-text">
+          Part of our promise is helping doors open. This page will grow into a hub of opportunities for our community.
+        </p>
+      </div>
+    </section>
+
+    <!-- Empty State -->
+    <section class="section" style="border-bottom: 1px solid var(--border);">
+      <div class="container container-narrow">
+        <div class="empty-state">
+          <div class="empty-state-icon">🎯</div>
+          <h2 class="empty-state-title">We are gathering our first opportunities</h2>
+          <p class="empty-state-desc">
+            We will share verified scholarships, training programs, grants, and internships. Join KOINOVA to receive them directly in your inbox, or submit one below.
+          </p>
+          <a href="/get-involved/become-a-member" class="btn btn-cta">JOIN KOINOVA</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Submission Form -->
+    <section class="section section-subtle" style="border-bottom: 1px solid var(--border);">
+      <div class="container container-narrow">
+        <span class="eyebrow">Share with the Community</span>
+        <h2 style="font-size: var(--text-2xl); margin: var(--space-2) 0 var(--space-4);">Share an opportunity</h2>
+        <p style="margin-bottom: var(--space-8);">
+          Know of a scholarship, grant, job or programme that could help our community? Tell us.
+        </p>
+
+        <form class="card" style="padding: var(--space-8);" method="POST" action="/api/opportunities">
+          <div class="form-group">
+            <label class="form-label" for="opp-title">Opportunity title</label>
+            <input type="text" id="opp-title" name="title" class="input-field" required placeholder="e.g. AI Ethics Research Fellowship">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="opp-org">Organisation</label>
+            <input type="text" id="opp-org" name="organisation" class="input-field" required placeholder="Organization name">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="opp-type">Type of opportunity</label>
+            <select id="opp-type" name="type" class="select-field" required>
+              <option value="scholarship">Scholarship / Grant</option>
+              <option value="training">Training / Bootcamp</option>
+              <option value="competition">Hackathon / Competition</option>
+              <option value="internship">Internship / Job</option>
+              <option value="event">Conference / Summit</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="opp-link">Application link (URL)</label>
+            <input type="url" id="opp-link" name="link" class="input-field" required placeholder="https://example.com/apply">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="opp-deadline">Deadline</label>
+            <input type="date" id="opp-deadline" name="deadline" class="input-field">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="opp-submitter">Your name and email</label>
+            <input type="text" id="opp-submitter" name="submitter" class="input-field" required placeholder="Your Name (name@example.com)">
+          </div>
+
+          <p style="font-size: 0.8125rem; color: var(--text-muted); margin-bottom: var(--space-6); font-style: italic;">
+            Disclaimer: Each submission is reviewed before publishing. KOINOVA shares opportunities in good faith. Please verify details with the organiser before applying.
+          </p>
+
+          <button type="submit" class="btn btn-primary">SUBMIT OPPORTUNITY</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- @include footer -->
+</body>
+</html>
+

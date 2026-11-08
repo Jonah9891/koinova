@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <!-- @include head -->
+  <title>Partner With KOINOVA</title>
+  <meta name="description" content="Partner with KOINOVA as a company, university, church, investor or institution to support Christian innovation and entrepreneurship.">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- @include header -->
+
+  <main id="main-content">
+    <section class="section section-subtle" style="border-bottom: 1px solid var(--border); padding-top: var(--space-16); padding-bottom: var(--space-12);">
+      <div class="container container-narrow">
+        <nav aria-label="Breadcrumb" style="margin-bottom: var(--space-4); font-size: 0.875rem;">
+          <a href="/">Home</a> <span aria-hidden="true" style="opacity: 0.5;">/</span> 
+          <a href="/get-involved">Get Involved</a> <span aria-hidden="true" style="opacity: 0.5;">/</span> 
+          <span style="color: var(--text);">Partner With Us</span>
+        </nav>
+        <span class="eyebrow">Strategic Alliances</span>
+        <h1 style="margin: var(--space-3) 0 var(--space-4);">Partner With <span class="gradient-text-emerald">Us</span></h1>
+        <p class="lead-text">
+          KOINOVA believes that meaningful progress happens through collaboration. We are open to partnerships that expand access to knowledge, resources and opportunities for our community.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" style="border-bottom: 1px solid var(--border);">
+      <div class="container">
+        <div class="split-layout" style="align-items: flex-start; gap: var(--space-12);">
+          
+          <!-- Column 1: Who we work with & what we offer -->
+          <div>
+            <div style="border-radius: var(--radius-xl); overflow: hidden; border: 1px solid var(--border); margin-bottom: var(--space-8);">
+              <img src="/assets/img/sections/partner-with-us.jpg" alt="Strategic partners holding an executive discussion in a brightly lit conference room." width="600" height="400" loading="lazy" style="width: 100%; height: auto; object-fit: cover;">
+            </div>
+
+            <div class="card" style="padding: var(--space-6); margin-bottom: var(--space-6);">
+              <h2 style="font-size: 1.15rem; margin-bottom: var(--space-3);">Ways to partner</h2>
+              <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-2); font-size: 0.875rem;">
+                <li>• <strong>Programme partnerships:</strong> co-delivering training, challenges or events</li>
+                <li>• <strong>Sponsorship:</strong> supporting events and key initiatives</li>
+                <li>• <strong>Learning &amp; talent:</strong> scholarships, internships, mentorship</li>
+                <li>• <strong>Research collaboration:</strong> joint projects and knowledge exchange</li>
+                <li>• <strong>Investment &amp; ventures:</strong> backing Christian founders and startups</li>
+                <li>• <strong>Community partnerships:</strong> churches and ministries engaging tech talents</li>
+              </ul>
+            </div>
+
+            <div class="card card-emerald" style="padding: var(--space-6);">
+              <h3 style="font-size: 1rem; color: var(--success-text); margin-bottom: 4px;">What we offer partners</h3>
+              <p style="font-size: 0.875rem; margin: 0;">
+                Access to a growing community of faith-driven professionals and founders, visibility in programmes aligned with their values, and a trusted route into a global Christian technology network.
+              </p>
+            </div>
+          </div>
+
+          <!-- Column 2: Partnership Enquiry Form -->
+          <div>
+            <form class="card" style="padding: var(--space-8);" method="POST" action="/api/partner">
+              <div style="display:none;" aria-hidden="true">
+                <input type="text" name="website" tabindex="-1" autocomplete="off">
+              </div>
+
+              <h2 style="font-size: var(--text-2xl); margin-bottom: var(--space-6);">Partnership Enquiry</h2>
+
+              <div class="form-group">
+                <label class="form-label" for="part-org">Organisation name <span style="color: #C62828;">*</span></label>
+                <input type="text" id="part-org" name="organisation" class="input-field" required placeholder="Company, university, or institution name">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="part-type">Type of organisation <span style="color: #C62828;">*</span></label>
+                <select id="part-type" name="org_type" class="select-field" required>
+                  <option value="">Select type...</option>
+                  <option value="tech_company">Technology company</option>
+                  <option value="university">University / Educational institution</option>
+                  <option value="hub">Innovation hub / Startup ecosystem</option>
+                  <option value="investor">Investor / Venture capital organisation</option>
+                  <option value="church">Church / Christian organisation</option>
+                  <option value="association">Professional association</option>
+                  <option value="research">Research institution</option>
+                  <option value="ngo">Development organisation / NGO</option>
+                  <option value="corporate">Corporate organisation</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="grid grid-2" style="gap: var(--space-4); margin-bottom: var(--space-5);">
+                <div>
+                  <label class="form-label" for="part-name">Your name <span style="color: #C62828;">*</span></label>
+                  <input type="text" id="part-name" name="contact_name" class="input-field" required placeholder="Your full name">
+                </div>
+                <div>
+                  <label class="form-label" for="part-role">Your role <span style="color: #C62828;">*</span></label>
+                  <input type="text" id="part-role" name="role" class="input-field" required placeholder="e.g. Director, Founder, Lead">
+                </div>
+              </div>
+
+              <div class="grid grid-2" style="gap: var(--space-4); margin-bottom: var(--space-5);">
+                <div>
+                  <label class="form-label" for="part-email">Email address <span style="color: #C62828;">*</span></label>
+                  <input type="email" id="part-email" name="email" class="input-field" required placeholder="name@organisation.com">
+                </div>
+                <div>
+                  <label class="form-label" for="part-country">Country <span style="color: #C62828;">*</span></label>
+                  <input type="text" id="part-country" name="country" class="input-field" required placeholder="Country">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="part-interest">Partnership area of interest <span style="color: #C62828;">*</span></label>
+                <input type="text" id="part-interest" name="interest_area" class="input-field" required placeholder="e.g. Programme collaboration, Sponsorship, Research">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="part-msg">Message <span style="color: #C62828;">*</span></label>
+                <textarea id="part-msg" name="message" class="textarea-field" rows="4" required placeholder="Tell us how you would like to collaborate..."></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="privacy" class="checkbox-input" required>
+                  <span>I have read and agree to the <a href="/privacy-policy" target="_blank">Privacy Policy</a> <span style="color: #C62828;">*</span></span>
+                </label>
+              </div>
+
+              <div class="form-feedback" aria-live="polite" style="margin-bottom: var(--space-4);"></div>
+
+              <button type="submit" class="btn btn-emerald" style="width: 100%; justify-content: center; padding: 14px 28px;">
+                SEND ENQUIRY
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- @include footer -->
+</body>
+</html>
+

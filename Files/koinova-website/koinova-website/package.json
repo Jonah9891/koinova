@@ -1,0 +1,26 @@
+{
+  "name": "koinova-website",
+  "version": "1.0.0",
+  "description": "KOINOVA global Christian technology and innovation ecosystem website and member sign-up app",
+  "main": "scripts/build.js",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node scripts/dev.js",
+    "lint": "eslint src/js scripts",
+    "format": "prettier --write \"src/**/*.{html,css,js}\""
+  },
+  "keywords": [
+    "koinova",
+    "christian-technology",
+    "innovation",
+    "ecosystem"
+  ],
+  "author": "KOINOVA",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "eslint": "^9.20.0",
+    "prettier": "^3.5.0"
+  }
+}
+

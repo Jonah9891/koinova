@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <!-- @include head -->
+  <title>Programmes | KOINOVA</title>
+  <meta name="description" content="Training, mentorship, innovation and community programmes from KOINOVA. See what is open now and what is coming next.">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- @include header -->
+
+  <main id="main-content">
+    <section class="section section-subtle" style="border-bottom: 1px solid var(--border); padding-top: var(--space-16); padding-bottom: var(--space-12);">
+      <div class="container container-narrow">
+        <nav aria-label="Breadcrumb" style="margin-bottom: var(--space-4); font-size: 0.875rem;">
+          <a href="/">Home</a> <span aria-hidden="true" style="opacity: 0.5;">/</span> 
+          <span style="color: var(--text);">Programmes</span>
+        </nav>
+        <span class="eyebrow">Capacity &amp; Impact</span>
+        <h1 style="margin: var(--space-3) 0 var(--space-4);">KOINOVA <span class="gradient-text-blue">Programmes</span></h1>
+        <p class="lead-text">
+          KOINOVA programmes are designed to help you learn, build, collaborate and lead. We are launching them in stages, starting with the ones that serve our founding community best.
+        </p>
+      </div>
+    </section>
+
+    <!-- Coming Soon Grid -->
+    <section class="section" style="border-bottom: 1px solid var(--border);">
+      <div class="container">
+        <h2 style="font-size: var(--text-2xl); margin-bottom: var(--space-8);">Coming soon</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="card-icon icon-blue">📚</div>
+            <span class="chip chip-status-soon" style="margin-bottom: var(--space-3);">Coming Soon</span>
+            <h3 style="font-size: 1.15rem; margin-bottom: var(--space-2);">Training &amp; Masterclasses</h3>
+            <p style="font-size: 0.9375rem;">Practical sessions on technology, AI, entrepreneurship and leadership.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon icon-gold">🤝</div>
+            <span class="chip chip-status-soon" style="margin-bottom: var(--space-3);">Coming Soon</span>
+            <h3 style="font-size: 1.15rem; margin-bottom: var(--space-2);">Mentorship</h3>
+            <p style="font-size: 0.9375rem;">Connecting members with experienced professionals and founders.</p>
+          </div>
+
+          <div class="card card-emerald">
+            <div class="card-icon icon-emerald">🚀</div>
+            <span class="chip chip-status-soon" style="margin-bottom: var(--space-3);">Coming Soon</span>
+            <h3 style="font-size: 1.15rem; margin-bottom: var(--space-2);">Startup Development</h3>
+            <p style="font-size: 0.9375rem;">Support for founders turning ideas into sustainable ventures.</p>
+          </div>
+
+          <div class="card card-emerald">
+            <div class="card-icon icon-emerald">💡</div>
+            <span class="chip chip-status-soon" style="margin-bottom: var(--space-3);">Coming Soon</span>
+            <h3 style="font-size: 1.15rem; margin-bottom: var(--space-2);">Innovation Challenges</h3>
+            <p style="font-size: 0.9375rem;">Opportunities to solve real problems collaboratively with other builders.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon icon-blue">👥</div>
+            <span class="chip chip-status-soon" style="margin-bottom: var(--space-3);">Coming Soon</span>
+            <h3 style="font-size: 1.15rem; margin-bottom: var(--space-2);">Community Events</h3>
+            <p style="font-size: 0.9375rem;">Meetups, webinars and gatherings for networking and shared learning.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Survey Section -->
+    <section class="section section-subtle" style="border-bottom: 1px solid var(--border);">
+      <div class="container container-narrow">
+        <span class="eyebrow">Shape the Future</span>
+        <h2 style="font-size: var(--text-2xl); margin: var(--space-2) 0 var(--space-4);">Help us shape our programmes</h2>
+        <p style="margin-bottom: var(--space-8);">
+          Tell us what you need most. Your input will directly influence what we build first.
+        </p>
+
+        <form class="card" style="padding: var(--space-8);" method="POST" action="/api/feedback">
+          <div class="form-group">
+            <label class="form-label" for="prog-name">Name</label>
+            <input type="text" id="prog-name" name="name" class="input-field" required placeholder="Your name">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="prog-email">Email</label>
+            <input type="email" id="prog-email" name="email" class="input-field" required placeholder="your.email@example.com">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="prog-country">Country</label>
+            <input type="text" id="prog-country" name="country" class="input-field" required placeholder="Your country">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="prog-role">Your primary role</label>
+            <select id="prog-role" name="role" class="select-field" required>
+              <option value="professional">Technology Professional</option>
+              <option value="founder">Founder / Entrepreneur</option>
+              <option value="student">Student / Emerging Talent</option>
+              <option value="researcher">Researcher / Academic</option>
+              <option value="leader">Executive / Technology Leader</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Which programmes interest you? (select all that apply)</label>
+            <div style="display: flex; flex-direction: column; gap: var(--space-2); margin-top: 4px;">
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="training" class="checkbox-input">
+                <span>Training &amp; Masterclasses</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="mentorship" class="checkbox-input">
+                <span>Mentorship Program</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="startups" class="checkbox-input">
+                <span>Startup Incubation &amp; Acceleration</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="challenges" class="checkbox-input">
+                <span>Innovation Hackathons &amp; Challenges</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="prog-notes">Anything else we should know?</label>
+            <textarea id="prog-notes" name="notes" class="textarea-field" rows="3" placeholder="Share your suggestions..."></textarea>
+          </div>
+
+          <div style="display: flex; gap: var(--space-4); align-items: center; flex-wrap: wrap;">
+            <button type="submit" class="btn btn-primary">SUBMIT FEEDBACK</button>
+            <a href="/get-involved/become-a-member" class="btn btn-cta">JOIN KOINOVA</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- @include footer -->
+</body>
+</html>
+

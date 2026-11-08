@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <!-- @include head -->
+  <title>KOINOVA Design System &amp; Component Styleguide</title>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- @include header -->
+
+  <main id="main-content" class="section">
+    <div class="container">
+      <div style="margin-bottom: var(--space-12);">
+        <span class="eyebrow">Internal Spec</span>
+        <h1 class="gradient-text-blue">Component Library &amp; Styleguide</h1>
+        <p class="lead-text" style="margin-top: var(--space-4);">
+          Living documentation of all KOINOVA design tokens, states, buttons, form controls, cards, and theme variations.
+        </p>
+      </div>
+
+      <!-- Section 1: Colour Palette & Contrast -->
+      <section style="margin-bottom: var(--space-16);">
+        <h2 style="margin-bottom: var(--space-6);">1. Official Colour Palette</h2>
+        <div class="grid grid-3">
+          <div class="card" style="border-left: 4px solid var(--brand-navy);">
+            <strong>Deep Navy Blue (#101C3A)</strong>
+            <span class="chip" style="margin-top: 8px;">--brand-navy (Primary)</span>
+          </div>
+          <div class="card" style="border-left: 4px solid var(--brand-emerald);">
+            <strong>Emerald Green (#0D9B72)</strong>
+            <span class="chip" style="margin-top: 8px;">--brand-emerald (Secondary)</span>
+          </div>
+          <div class="card" style="border-left: 4px solid var(--brand-gold);">
+            <strong>Champagne Gold (#D6AD60)</strong>
+            <span class="chip" style="margin-top: 8px;">--brand-gold (Accent)</span>
+          </div>
+          <div class="card" style="border-left: 4px solid var(--brand-blue);">
+            <strong>Innovation Blue (#2563EB)</strong>
+            <span class="chip" style="margin-top: 8px;">--brand-blue (Supporting)</span>
+          </div>
+          <div class="card" style="border-left: 4px solid var(--white);">
+            <strong>Pure White (#FFFFFF)</strong>
+            <span class="chip" style="margin-top: 8px;">--white (Neutral)</span>
+          </div>
+          <div class="card" style="border-left: 4px solid #DDE3EC;">
+            <strong>Soft Grey (#F3F5F8)</strong>
+            <span class="chip" style="margin-top: 8px;">--soft-grey (Neutral)</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Buttons & States -->
+      <section style="margin-bottom: var(--space-16);">
+        <h2 style="margin-bottom: var(--space-6);">2. Buttons &amp; Interactive States</h2>
+        <div class="card">
+          <div style="display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; margin-bottom: var(--space-6);">
+            <a href="#" class="btn btn-cta">JOIN KOINOVA (CTA Pill)</a>
+            <a href="#" class="btn btn-primary">Primary Innovation</a>
+            <a href="#" class="btn btn-emerald">Emerald Venture</a>
+            <a href="#" class="btn btn-secondary">Secondary Outline</a>
+            <a href="#" class="btn btn-ghost">Ghost Action</a>
+          </div>
+          <div style="display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center;">
+            <button class="btn btn-primary" disabled>Disabled State</button>
+            <button class="btn btn-primary btn-loading" aria-label="Loading action">Loading Button</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Chips & Status Badges -->
+      <section style="margin-bottom: var(--space-16);">
+        <h2 style="margin-bottom: var(--space-6);">3. Chips &amp; Status Badges</h2>
+        <div class="card" style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
+          <span class="chip chip-status-open">● Open Now</span>
+          <span class="chip chip-status-soon">● Launching Progressively</span>
+          <span class="chip chip-preview">Preview</span>
+          <span class="chip">Technology &amp; Engineering</span>
+          <span class="chip">AI &amp; Research</span>
+        </div>
+      </section>
+
+      <!-- Section 4: Cards & Grids -->
+      <section style="margin-bottom: var(--space-16);">
+        <h2 style="margin-bottom: var(--space-6);">4. Content Cards</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="card-icon icon-blue">🌐</div>
+            <h3>KOINOVA Community</h3>
+            <p>A global network of Christian technologists, developers, designers, and innovators united in purpose.</p>
+            <a href="/ecosystem/community" style="margin-top: var(--space-4); font-weight: 600;">Learn more →</a>
+          </div>
+
+          <div class="card card-emerald">
+            <div class="card-icon icon-emerald">🚀</div>
+            <h3>KOINOVA Ventures</h3>
+            <p>Backing faith-driven founders building high-impact technology solutions for global transformation.</p>
+            <a href="/ecosystem/ventures" style="margin-top: var(--space-4); font-weight: 600;">Explore Ventures →</a>
+          </div>
+
+          <div class="card card-gold">
+            <div class="card-icon icon-gold">🎓</div>
+            <h3>KOINOVA Academy</h3>
+            <p>Equipping believers with world-class technical skills, leadership training, and biblical perspective.</p>
+            <a href="/ecosystem/academy" style="margin-top: var(--space-4); font-weight: 600;">Join Academy →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Form Elements -->
+      <section style="margin-bottom: var(--space-16);">
+        <h2 style="margin-bottom: var(--space-6);">5. Form Controls</h2>
+        <div class="card" style="max-width: 640px;">
+          <div class="form-group">
+            <label class="form-label" for="sample-name">Full name</label>
+            <input type="text" id="sample-name" class="input-field" placeholder="Dansu Semawon Jonah">
+            <span class="form-helper">Enter your official name</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="sample-email">Email address</label>
+            <input type="email" id="sample-email" class="input-field" placeholder="founder@koinova.org">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="sample-category">Membership category</label>
+            <select id="sample-category" class="select-field">
+              <option value="professional">Technology Professional</option>
+              <option value="founder">Entrepreneur / Founder</option>
+              <option value="student">Student / Emerging Talent</option>
+              <option value="researcher">Researcher / Academic</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="sample-textarea">Statement of Interest</label>
+            <textarea id="sample-textarea" class="textarea-field" rows="3" placeholder="Share your vision..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="checkbox-label">
+              <input type="checkbox" class="checkbox-input" checked>
+              <span>I agree with KOINOVA's Statement of Faith and Privacy Policy</span>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6: Empty State -->
+      <section style="margin-bottom: var(--space-16);">
+        <h2 style="margin-bottom: var(--space-6);">6. Honest Empty State</h2>
+        <div class="empty-state">
+          <div class="empty-state-icon">📅</div>
+          <h3 class="empty-state-title">No upcoming events right now</h3>
+          <p class="empty-state-desc">
+            We are curating our inaugural masterclasses and hackathons. Subscribe to our newsletter to receive launch notifications.
+          </p>
+          <a href="#site-footer" class="btn btn-secondary">Get Notified</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- @include footer -->
+</body>
+</html>
+

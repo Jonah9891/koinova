@@ -1,0 +1,181 @@
+<header class="site-header" id="site-header">
+  <div class="header-container">
+    <!-- Brand Logo -->
+    <a href="/" class="brand-link" aria-label="KOINOVA - Where Faith Meets Innovation">
+      <img src="/assets/brand/koinova-logo-dark.png" alt="KOINOVA Logo" class="brand-logo logo-dark" width="160" height="42">
+      <img src="/assets/brand/koinova-logo-light.png" alt="KOINOVA Logo" class="brand-logo logo-light" width="160" height="42">
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav" aria-label="Main Navigation">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+        
+        <!-- About Dropdown -->
+        <li class="nav-item nav-has-dropdown">
+          <button class="nav-link nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+            About <span class="dropdown-chevron" aria-hidden="true">▾</span>
+          </button>
+          <ul class="nav-dropdown" aria-label="About Submenu">
+            <li><a href="/about" class="dropdown-link">About Overview</a></li>
+            <li><a href="/about/our-story" class="dropdown-link">Our Story</a></li>
+            <li><a href="/about/vision-and-mission" class="dropdown-link">Vision &amp; Mission</a></li>
+            <li><a href="/about/values-and-faith" class="dropdown-link">Values &amp; Statement of Faith</a></li>
+            <li><a href="/about/leadership" class="dropdown-link">Leadership</a></li>
+          </ul>
+        </li>
+
+        <!-- Ecosystem Dropdown -->
+        <li class="nav-item nav-has-dropdown">
+          <button class="nav-link nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+            Ecosystem <span class="dropdown-chevron" aria-hidden="true">▾</span>
+          </button>
+          <ul class="nav-dropdown" aria-label="Ecosystem Submenu">
+            <li><a href="/ecosystem" class="dropdown-link">Ecosystem Overview</a></li>
+            <li><a href="/ecosystem/community" class="dropdown-link">Community</a></li>
+            <li><a href="/ecosystem/academy" class="dropdown-link">Academy</a></li>
+            <li><a href="/ecosystem/innovation" class="dropdown-link">Innovation</a></li>
+            <li><a href="/ecosystem/ventures" class="dropdown-link">Ventures</a></li>
+            <li><a href="/ecosystem/global" class="dropdown-link">Global</a></li>
+          </ul>
+        </li>
+
+        <!-- Programmes Dropdown -->
+        <li class="nav-item nav-has-dropdown">
+          <button class="nav-link nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+            Programmes <span class="dropdown-chevron" aria-hidden="true">▾</span>
+          </button>
+          <ul class="nav-dropdown" aria-label="Programmes Submenu">
+            <li><a href="/programmes" class="dropdown-link">Current Programmes</a></li>
+            <li><a href="/programmes/events" class="dropdown-link">Events</a></li>
+          </ul>
+        </li>
+
+        <!-- Resources Dropdown -->
+        <li class="nav-item nav-has-dropdown">
+          <button class="nav-link nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+            Resources <span class="dropdown-chevron" aria-hidden="true">▾</span>
+          </button>
+          <ul class="nav-dropdown" aria-label="Resources Submenu">
+            <li><a href="/resources" class="dropdown-link">Resources Overview</a></li>
+            <li><a href="/resources/articles" class="dropdown-link">Articles &amp; Insights</a></li>
+            <li><a href="/resources/opportunities" class="dropdown-link">Opportunities</a></li>
+          </ul>
+        </li>
+
+        <!-- Get Involved Dropdown -->
+        <li class="nav-item nav-has-dropdown">
+          <button class="nav-link nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+            Get Involved <span class="dropdown-chevron" aria-hidden="true">▾</span>
+          </button>
+          <ul class="nav-dropdown" aria-label="Get Involved Submenu">
+            <li><a href="/get-involved" class="dropdown-link">Overview</a></li>
+            <li><a href="/get-involved/become-a-member" class="dropdown-link">Become a Member</a></li>
+            <li><a href="/get-involved/volunteer" class="dropdown-link">Volunteer</a></li>
+            <li><a href="/get-involved/partner-with-us" class="dropdown-link">Partner With Us</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header Actions (Theme Toggle & CTA) -->
+    <div class="header-actions">
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch colour theme">
+        <span class="theme-icon" aria-hidden="true">◐</span>
+      </button>
+
+      <a href="/get-involved/become-a-member" class="btn btn-cta header-cta-btn">JOIN KOINOVA</a>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Drawer Overlay -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-hidden="true">
+    <div class="mobile-nav-inner">
+      <div class="mobile-nav-top">
+        <a href="/get-involved/become-a-member" class="btn btn-cta mobile-cta-btn">JOIN KOINOVA</a>
+        <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Close navigation menu">✕</button>
+      </div>
+
+      <nav class="mobile-nav-menu" aria-label="Mobile Navigation">
+        <ul class="mobile-nav-list">
+          <li><a href="/" class="mobile-link">Home</a></li>
+          
+          <li class="mobile-accordion-item">
+            <button class="mobile-accordion-trigger" aria-expanded="false">
+              About <span>▾</span>
+            </button>
+            <div class="mobile-accordion-panel">
+              <a href="/about">Overview</a>
+              <a href="/about/our-story">Our Story</a>
+              <a href="/about/vision-and-mission">Vision &amp; Mission</a>
+              <a href="/about/values-and-faith">Values &amp; Statement of Faith</a>
+              <a href="/about/leadership">Leadership</a>
+            </div>
+          </li>
+
+          <li class="mobile-accordion-item">
+            <button class="mobile-accordion-trigger" aria-expanded="false">
+              Ecosystem <span>▾</span>
+            </button>
+            <div class="mobile-accordion-panel">
+              <a href="/ecosystem">Ecosystem Overview</a>
+              <a href="/ecosystem/community">Community</a>
+              <a href="/ecosystem/academy">Academy</a>
+              <a href="/ecosystem/innovation">Innovation</a>
+              <a href="/ecosystem/ventures">Ventures</a>
+              <a href="/ecosystem/global">Global</a>
+            </div>
+          </li>
+
+          <li class="mobile-accordion-item">
+            <button class="mobile-accordion-trigger" aria-expanded="false">
+              Programmes <span>▾</span>
+            </button>
+            <div class="mobile-accordion-panel">
+              <a href="/programmes">Current Programmes</a>
+              <a href="/programmes/events">Events</a>
+            </div>
+          </li>
+
+          <li class="mobile-accordion-item">
+            <button class="mobile-accordion-trigger" aria-expanded="false">
+              Resources <span>▾</span>
+            </button>
+            <div class="mobile-accordion-panel">
+              <a href="/resources">Resources Overview</a>
+              <a href="/resources/articles">Articles &amp; Insights</a>
+              <a href="/resources/opportunities">Opportunities</a>
+            </div>
+          </li>
+
+          <li class="mobile-accordion-item">
+            <button class="mobile-accordion-trigger" aria-expanded="false">
+              Get Involved <span>▾</span>
+            </button>
+            <div class="mobile-accordion-panel">
+              <a href="/get-involved">Overview</a>
+              <a href="/get-involved/become-a-member">Become a Member</a>
+              <a href="/get-involved/volunteer">Volunteer</a>
+              <a href="/get-involved/partner-with-us">Partner With Us</a>
+            </div>
+          </li>
+
+          <li><a href="/contact" class="mobile-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-nav-footer">
+        <button id="mobile-theme-toggle" class="theme-toggle-btn mobile-theme-btn" aria-label="Toggle theme">
+          <span class="theme-icon">◐</span> Toggle Theme
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
