@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KOINOVA | Where Faith Meets Innovation</title>
+<meta name="description" content="KOINOVA is a global Christian technology and innovation ecosystem connecting, equipping and empowering Christians in tech, entrepreneurship and research.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://koinova.org/">
+<meta property="og:title" content="KOINOVA | Where Faith Meets Innovation">
+<meta property="og:description" content="Faith-Inspired. Innovation-Driven. Impact-Focused. Connecting and equipping Christians in technology globally.">
+<meta property="og:image" content="/assets/brand/og-share.svg">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KOINOVA | Where Faith Meets Innovation">
+<meta name="twitter:description" content="Faith-Inspired. Innovation-Driven. Impact-Focused. Connecting and equipping Christians in technology globally.">
+<meta name="twitter:image" content="/assets/brand/og-share.svg">
+
+<!-- Favicon & Touch Icons -->
+<link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/brand/favicon.svg">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="/css/tokens.css">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/layout.css">
+<link rel="stylesheet" href="/css/components.css">
+<link rel="stylesheet" href="/css/animations.css">
+
+<!-- Inline Theme Bootstrap (Zero Flash) -->
+<script>
+  (function() {
+    const saved = localStorage.getItem('koinova-theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = saved || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header class="site-header" id="site-header">
+  <div class="header-container">
+    <!-- Brand Logo -->
+    <a href="/" class="brand-link" aria-label="KOINOVA - Where Faith Meets Innovation">
+      <img src="/assets/brand/koinova-logo-dark.png" alt="KOINOVA Logo" class="brand-logo logo-dark" width="160" height="42">
+      <img src="/assets/brand/koinova-logo-light.png" alt="KOINOVA Logo" class="brand-logo logo-light" width="160" height="42">
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav" aria-label="Main Navigation">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+        
+        <!-- About Dropdown -->
+        <li class="nav-item nav-has-dropdown">
+          <button class="nav-link nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+            About <span class="dropdown-chevron" aria-hidden="true">▾</span>
+          </button>
+          <ul class="nav-dropdown" aria-label="About Submenu">
+            <li><a href="/about" class="dropdown-link">About Overview</a></li>
+            <li><a href="/about/our-story" class="dropdown-link">Our Story</a></li>
+            <li><a href="/about/vision-and-mission" class="dropdown-link">Vision &amp; Mission</a></li>
+            <li><a href="/about/values-and-faith" class="dropdown-link">Values &amp; Statement of Faith</a></li>
+            <li><a href="/about/leadership" class="dropdown-link">Leadership</a></li>
+          </ul>
+        </li>
+
+        <!-- Ecosystem Dropdown -->
+        <li class="nav-item nav-has-dropdown">
+          <button class="nav-link nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+            Ecosystem <span class="dropdown-chevron" aria-hidden="true">▾</span>
+          </button>
+          <ul class="nav-dropdown" aria-label="Ecosystem Submenu">
+            <li><a href="/ecosystem" class="dropdown-link">Ecosystem Overview</a></li>
+            <li><a href="/ecosystem/community" class="dropdown-link">Community</a></li>
+            <li><a href="/ecosystem/academy" class="dropdown-link">Academy</a></li>
+            <li><a href="/ecosystem/innovation" class="dropdown-link">Innovation</a></li>
+            <li><a href="/ecosystem/ventures" class="dropdown-link">Ventures</a></li>
+            <li><a href="/ecosystem/global" class="dropdown-link">Global</a></li>
+          </ul>
+        </li>
+
+        <!-- Programmes Dropdown -->
+        <li class="nav-item nav-has-dropdown">
+          <button class="nav-link nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+            Programmes <span class="dropdown-chevron" aria-hidden="true">▾</span>
+          </button>
+          <ul class="nav-dropdown" aria-label="Programmes Submenu">
+            <li><a href="/programmes" class="dropdown-link">Current Programmes</a></li>
+            <li><a href="/programmes/events" class="dropdown-link">Events</a></li>
+          </ul>
+        </li>
+
+        <!-- Resources Dropdown -->
+        <li class="nav-item nav-has-dropdown">
+          <button class="nav-link nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+            Resources <span class="dropdown-chevron" aria-hidden="true">▾</span>
+          </button>
+          <ul class="nav-dropdown" aria-label="Resources Submenu">
+            <li><a href="/resources" class="dropdown-link">Resources Overview</a></li>
+            <li><a href="/resources/articles" class="dropdown-link">Articles &amp; Insights</a></li>
+            <li><a href="/resources/opportunities" class="dropdown-link">Opportunities</a></li>
+          </ul>
+        </li>
+
+        <!-- Get Involved Dropdown -->
+        <li class="nav-item nav-has-dropdown">
+          <button class="nav-link nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+            Get Involved <span class="dropdown-chevron" aria-hidden="true">▾</span>
+          </button>
+          <ul class="nav-dropdown" aria-label="Get Involved Submenu">
+            <li><a href="/get-involved" class="dropdown-link">Overview</a></li>
+            <li><a href="/get-involved/become-a-member" class="dropdown-link">Become a Member</a></li>
+            <li><a href="/get-involved/volunteer" class="dropdown-link">Volunteer</a></li>
+            <li><a href="/get-involved/partner-with-us" class="dropdown-link">Partner With Us</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header Actions (Theme Toggle & CTA) -->
+    <div class="header-actions">
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch colour theme">
+        <span class="theme-icon" aria-hidden="true">◐</span>
+      </button>
+
+      <a href="/get-involved/become-a-member" class="btn btn-cta header-cta-btn">JOIN KOINOVA</a>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Drawer Overlay -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-hidden="true">
+    <div class="mobile-nav-inner">
+      <div class="mobile-nav-top">
+        <a href="/get-involved/become-a-member" class="btn btn-cta mobile-cta-btn">JOIN KOINOVA</a>
+        <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Close navigation menu">✕</button>
+      </div>
+
+      <nav class="mobile-nav-menu" aria-label="Mobile Navigation">
+        <ul class="mobile-nav-list">
+          <li><a href="/" class="mobile-link">Home</a></li>
+          
+          <li class="mobile-accordion-item">
+            <button class="mobile-accordion-trigger" aria-expanded="false">
+              About <span>▾</span>
+            </button>
+            <div class="mobile-accordion-panel">
+              <a href="/about">Overview</a>
+              <a href="/about/our-story">Our Story</a>
+              <a href="/about/vision-and-mission">Vision &amp; Mission</a>
+              <a href="/about/values-and-faith">Values &amp; Statement of Faith</a>
+              <a href="/about/leadership">Leadership</a>
+            </div>
+          </li>
+
+          <li class="mobile-accordion-item">
+            <button class="mobile-accordion-trigger" aria-expanded="false">
+              Ecosystem <span>▾</span>
+            </button>
+            <div class="mobile-accordion-panel">
+              <a href="/ecosystem">Ecosystem Overview</a>
+              <a href="/ecosystem/community">Community</a>
+              <a href="/ecosystem/academy">Academy</a>
+              <a href="/ecosystem/innovation">Innovation</a>
+              <a href="/ecosystem/ventures">Ventures</a>
+              <a href="/ecosystem/global">Global</a>
+            </div>
+          </li>
+
+          <li class="mobile-accordion-item">
+            <button class="mobile-accordion-trigger" aria-expanded="false">
+              Programmes <span>▾</span>
+            </button>
+            <div class="mobile-accordion-panel">
+              <a href="/programmes">Current Programmes</a>
+              <a href="/programmes/events">Events</a>
+            </div>
+          </li>
+
+          <li class="mobile-accordion-item">
+            <button class="mobile-accordion-trigger" aria-expanded="false">
+              Resources <span>▾</span>
+            </button>
+            <div class="mobile-accordion-panel">
+              <a href="/resources">Resources Overview</a>
+              <a href="/resources/articles">Articles &amp; Insights</a>
+              <a href="/resources/opportunities">Opportunities</a>
+            </div>
+          </li>
+
+          <li class="mobile-accordion-item">
+            <button class="mobile-accordion-trigger" aria-expanded="false">
+              Get Involved <span>▾</span>
+            </button>
+            <div class="mobile-accordion-panel">
+              <a href="/get-involved">Overview</a>
+              <a href="/get-involved/become-a-member">Become a Member</a>
+              <a href="/get-involved/volunteer">Volunteer</a>
+              <a href="/get-involved/partner-with-us">Partner With Us</a>
+            </div>
+          </li>
+
+          <li><a href="/contact" class="mobile-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-nav-footer">
+        <button id="mobile-theme-toggle" class="theme-toggle-btn mobile-theme-btn" aria-label="Toggle theme">
+          <span class="theme-icon">◐</span> Toggle Theme
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <main id="main-content">
+    <section class="hero-section" style="padding: 120px 24px; text-align: center;">
+      <div class="container">
+        <span class="eyebrow" style="color: var(--brand-gold, #D6AD60); text-transform: uppercase; font-size: 0.875rem; letter-spacing: 0.1em; font-weight: 600;">Where Faith Meets Innovation</span>
+        <h1 style="font-size: clamp(2.5rem, 6vw, 4.5rem); margin: 16px 0; color: var(--text, #ffffff); line-height: 1.1;">KOINOVA</h1>
+        <p style="font-size: 1.25rem; max-width: 680px; margin: 0 auto 32px; color: var(--text-muted, #A9B6D0);">
+          Faith-Inspired. Innovation-Driven. Impact-Focused. Connecting, equipping, and empowering Christians in technology and entrepreneurship globally.
+        </p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="/get-involved/become-a-member" class="btn btn-cta" style="background: linear-gradient(135deg, #D6AD60, #C29B4A); color: #101C3A; padding: 14px 28px; border-radius: 9999px; font-weight: 700; text-decoration: none;">JOIN KOINOVA</a>
+          <a href="/ecosystem" class="btn btn-secondary" style="border: 1px solid var(--border, #263558); color: var(--text, #ffffff); padding: 14px 28px; border-radius: 9999px; text-decoration: none;">Explore the Ecosystem</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer">
+  <div class="footer-container">
+    <!-- Top 5 Columns Layout -->
+    <div class="footer-grid">
+      <!-- Column 1: Brand & Tagline -->
+      <div class="footer-col footer-col-brand">
+        <div class="footer-brand">
+          <span class="footer-logo-text">KOINOVA</span>
+          <p class="footer-tagline">Where Faith Meets Innovation.</p>
+          <p class="footer-description">
+            KOINOVA is a global Christian technology and innovation ecosystem connecting, equipping and empowering Christians to contribute meaningfully to technology, entrepreneurship and innovation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Column 2: Our Ecosystem -->
+      <div class="footer-col">
+        <h3 class="footer-heading">Our Ecosystem</h3>
+        <ul class="footer-links">
+          <li><a href="/ecosystem/community">Community</a></li>
+          <li><a href="/ecosystem/academy">Academy</a></li>
+          <li><a href="/ecosystem/innovation">Innovation</a></li>
+          <li><a href="/ecosystem/ventures">Ventures</a></li>
+          <li><a href="/ecosystem/global">Global</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Explore -->
+      <div class="footer-col">
+        <h3 class="footer-heading">Explore</h3>
+        <ul class="footer-links">
+          <li><a href="/about">About KOINOVA</a></li>
+          <li><a href="/about/our-story">Our Story</a></li>
+          <li><a href="/about/vision-and-mission">Vision &amp; Mission</a></li>
+          <li><a href="/about/leadership">Leadership</a></li>
+          <li><a href="/programmes">Programmes</a></li>
+          <li><a href="/programmes/events">Events</a></li>
+          <li><a href="/resources/articles">Articles</a></li>
+          <li><a href="/resources/opportunities">Opportunities</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Get Involved -->
+      <div class="footer-col">
+        <h3 class="footer-heading">Get Involved</h3>
+        <ul class="footer-links">
+          <li><a href="/get-involved/become-a-member">Join KOINOVA</a></li>
+          <li><a href="/get-involved/volunteer">Volunteer</a></li>
+          <li><a href="/get-involved/partner-with-us">Partner With Us</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 5: Connect & Newsletter -->
+      <div class="footer-col footer-col-connect">
+        <h3 class="footer-heading">Stay Connected</h3>
+        <p class="footer-newsletter-text">
+          Get updates on programmes, opportunities and launches. No spam, unsubscribe any time.
+        </p>
+        <form class="footer-newsletter-form" id="newsletter-form" method="POST" action="/api/newsletter">
+          <!-- Honeypot -->
+          <div class="honeypot-field" style="display:none;" aria-hidden="true">
+            <input type="text" name="website" tabindex="-1" autocomplete="off">
+          </div>
+          <div class="newsletter-input-group">
+            <input type="email" name="email" class="input-field" placeholder="Enter your email" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn btn-primary newsletter-btn">Subscribe</button>
+          </div>
+          <div class="newsletter-feedback" id="newsletter-feedback" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bottom Legal & Copyright Bar -->
+    <div class="footer-bottom">
+      <div class="footer-legal-links">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <span class="legal-divider" aria-hidden="true">·</span>
+        <a href="/terms-of-use">Terms of Use</a>
+        <span class="legal-divider" aria-hidden="true">·</span>
+        <a href="/cookie-policy">Cookie Policy</a>
+      </div>
+      <div class="footer-copyright">
+        &copy; 2026 KOINOVA. All rights reserved. Faith-Inspired. Innovation-Driven. Impact-Focused.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Cookie Consent Banner -->
+<div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie consent banner" hidden>
+  <div class="cookie-content">
+    <p class="cookie-text">
+      We use cookies and essential local storage to ensure the best experience, remember your theme preference, and understand community engagement. See our <a href="/cookie-policy">Cookie Policy</a>.
+    </p>
+    <div class="cookie-actions">
+      <button id="cookie-accept" class="btn btn-cta cookie-btn">Accept All</button>
+      <button id="cookie-essential" class="btn btn-secondary cookie-btn">Essential Only</button>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="/js/main.js"></script>
+
+</body>
+</html>
+
