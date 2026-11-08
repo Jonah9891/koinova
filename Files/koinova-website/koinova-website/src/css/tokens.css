@@ -1,32 +1,38 @@
 /* tokens.css - KOINOVA Design System Tokens */
 
 :root {
-  /* 1. Official Fixed Palette (Client-Supplied) */
-  --brand-navy: #101C3A;      /* Primary */
-  --brand-emerald: #0D9B72;   /* Secondary */
-  --brand-gold: #D6AD60;      /* Accent */
-  --brand-blue: #2563EB;      /* Supporting Innovation Blue */
-  --white: #FFFFFF;           /* Neutral */
-  --soft-grey: #F3F5F8;       /* Neutral */
+  /* 1. Official Fixed Palette */
+  --brand-navy: #101C3A;
+  /* Primary Deep Navy */
+  --brand-emerald: #0D9B72;
+  /* Signature Logo Emerald Green */
+  --brand-blue: #2563EB;
+  /* Supporting Innovation Blue */
+  --white: #FFFFFF;
+  /* Neutral */
+  --soft-grey: #F3F5F8;
+  /* Neutral */
 
   /* 2. Verified Accessible Text-Safe Shades */
-  --emerald-text-light: #0A7A5A;  /* WCAG 5.3:1 on light */
-  --emerald-text-dark: #3DD6A3;   /* WCAG 9.1:1 on dark navy */
-  --gold-text-light: #8F6B1A;     /* WCAG 4.9:1 on light */
-  --blue-text-dark: #7FA8FF;      /* WCAG 7.2:1 on dark navy */
+  --emerald-text-light: #0A7A5A;
+  /* WCAG 5.3:1 on light */
+  --emerald-text-dark: #3DD6A3;
+  /* WCAG 9.1:1 on dark */
+  --blue-text-dark: #7FA8FF;
+  /* WCAG 7.2:1 on dark */
 
-  /* 3. Single-Family Gradients (Strictly one colour family) */
+  /* 3. Single-Family Gradients */
   --grad-blue: linear-gradient(135deg, #2563EB, #1D4ED8);
   --grad-blue-subtle: linear-gradient(180deg, rgba(37, 99, 235, 0.08) 0%, rgba(37, 99, 235, 0) 100%);
-  --grad-gold: linear-gradient(135deg, #D6AD60, #B88E3E);
-  --grad-gold-subtle: linear-gradient(180deg, rgba(214, 173, 96, 0.12) 0%, rgba(214, 173, 96, 0) 100%);
-  --grad-emerald: linear-gradient(135deg, #0D9B72, #0A7A5A);
+  --grad-emerald: linear-gradient(135deg, #0D9B72, #3DD6A3);
+  --grad-emerald-dark: linear-gradient(135deg, #0A7A5A, #0D9B72);
   --grad-emerald-subtle: linear-gradient(180deg, rgba(13, 155, 114, 0.12) 0%, rgba(13, 155, 114, 0) 100%);
+  --grad-cta: linear-gradient(135deg, #0D9B72, #3DD6A3);
+  /* Replaces gold CTA with logo emerald gradient */
 
   /* Ambient Glows */
   --glow-blue: radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.15) 0%, transparent 70%);
-  --glow-emerald: radial-gradient(circle at 50% 50%, rgba(13, 155, 114, 0.15) 0%, transparent 70%);
-  --glow-gold: radial-gradient(circle at 50% 50%, rgba(214, 173, 96, 0.15) 0%, transparent 70%);
+  --glow-emerald: radial-gradient(circle at 50% 50%, rgba(13, 155, 114, 0.2) 0%, transparent 70%);
 
   /* 4. Fluid Typography Scale */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -78,28 +84,29 @@
 
   /* 8. Light Theme Semantic Mapping (:root) */
   --bg: #FFFFFF;
-  --bg-subtle: linear-gradient(180deg, #FFFFFF 0%, #F0F9F5 100%); /* Subtle white to light emerald tint */
+  --bg-subtle: linear-gradient(180deg, #FFFFFF 0%, #F0F9F5 100%);
+  /* Subtle white to light emerald tint */
   --surface: #FFFFFF;
   --surface-raised: #F8FAF9;
   --border: #DDE3EC;
-  --border-focus: var(--brand-blue);
+  --border-focus: var(--brand-emerald);
   --text: var(--brand-navy);
   --text-muted: #4B5A73;
   --text-on-brand: #FFFFFF;
   --link: var(--brand-blue);
-  --accent-text: var(--gold-text-light);
+  --accent-text: var(--emerald-text-light);
   --success-text: var(--emerald-text-light);
-  --focus-ring: var(--brand-blue);
+  --focus-ring: var(--brand-emerald);
 
   /* Button Tokens */
   --btn-primary-bg: var(--grad-blue);
   --btn-primary-text: #FFFFFF;
-  --btn-cta-bg: var(--grad-gold);
-  --btn-cta-text: var(--brand-navy);
+  --btn-cta-bg: var(--grad-cta);
+  --btn-cta-text: #FFFFFF;
   --btn-emerald-bg: var(--grad-emerald);
-  --btn-emerald-text: var(--brand-navy);
+  --btn-emerald-text: #FFFFFF;
 
-  --heading-gradient: linear-gradient(90deg, #101C3A, #2563EB);
+  --heading-gradient: linear-gradient(90deg, #101C3A, #0D9B72);
 
   /* Shadows */
   --shadow-sm: 0 1px 2px rgba(16, 28, 58, 0.06);
@@ -109,29 +116,32 @@
 
 /* 9. Dark Theme Semantic Mapping */
 [data-theme="dark"] {
-  --bg: #000000;             /* Clean pure black background */
-  --bg-subtle: #09090B;      /* Deeper subtle dark base */
-  --surface: #0E131F;        /* Deep midnight surface */
+  --bg: #000000;
+  /* Clean pure black background */
+  --bg-subtle: #09090B;
+  /* Deeper subtle dark base */
+  --surface: #0E131F;
+  /* Deep midnight surface */
   --surface-raised: #141B2D;
   --border: #1F293D;
-  --border-focus: var(--brand-gold);
+  --border-focus: var(--brand-emerald);
   --text: #EEF2FA;
   --text-muted: #A9B6D0;
   --text-on-brand: #FFFFFF;
   --link: var(--blue-text-dark);
-  --accent-text: var(--brand-gold);
+  --accent-text: var(--emerald-text-dark);
   --success-text: var(--emerald-text-dark);
-  --focus-ring: var(--brand-gold);
+  --focus-ring: var(--emerald-text-dark);
 
   /* Button Tokens */
   --btn-primary-bg: var(--grad-blue);
   --btn-primary-text: #FFFFFF;
-  --btn-cta-bg: var(--grad-gold);
-  --btn-cta-text: var(--brand-navy);
+  --btn-cta-bg: var(--grad-cta);
+  --btn-cta-text: #0A1226;
   --btn-emerald-bg: var(--grad-emerald);
-  --btn-emerald-text: var(--brand-navy);
+  --btn-emerald-text: #0A1226;
 
-  --heading-gradient: linear-gradient(90deg, #EEF2FA, #7FA8FF);
+  --heading-gradient: linear-gradient(90deg, #EEF2FA, #3DD6A3);
 
   /* Shadows */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);

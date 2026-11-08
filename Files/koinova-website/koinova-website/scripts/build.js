@@ -89,7 +89,7 @@ function build() {
 
   // 1. Clean dist
   if (fs.existsSync(DIST_DIR)) {
-    fs.rmSync(DIST_DIR, { recursive: true, force: true });
+    fs.rmSync(DIST_DIR, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 });
   }
   fs.mkdirSync(DIST_DIR, { recursive: true });
 

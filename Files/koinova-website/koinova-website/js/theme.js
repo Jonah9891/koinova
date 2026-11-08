@@ -18,10 +18,6 @@ export function initTheme() {
   function updateToggleAria(theme) {
     toggleBtns.forEach(btn => {
       btn.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
-      const icon = btn.querySelector('.theme-icon');
-      if (icon) {
-        icon.textContent = theme === 'dark' ? '☀' : '☾';
-      }
     });
   }
 
