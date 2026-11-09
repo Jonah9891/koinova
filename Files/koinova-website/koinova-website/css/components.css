@@ -501,11 +501,7 @@ button, input, select, textarea {
 }
 
 .card-emerald:hover {
-  border-color: rgba(13, 155, 114, 0.4);
-}
-
-.card-emerald:hover {
-  border-color: rgba(13, 155, 114, 0.4);
+  border-color: rgba(0, 247, 255, 0.45);
 }
 
 .card-icon {
@@ -529,11 +525,11 @@ button, input, select, textarea {
   transition: stroke var(--transition-fast);
 }
 
-/* Plain color icon badges matching brand palette: Black, White, Emerald */
+/* Plain color icon badges matching brand palette: Black, White, #00f7ff Cyan */
 .icon-emerald {
-  background: rgba(13, 155, 114, 0.12);
-  border-color: rgba(13, 155, 114, 0.28);
-  color: var(--brand-emerald);
+  background: rgba(0, 247, 255, 0.12);
+  border-color: rgba(0, 247, 255, 0.3);
+  color: var(--brand-cyan);
 }
 
 .icon-blue {
@@ -548,12 +544,12 @@ button, input, select, textarea {
   color: var(--text);
 }
 
-/* Dark theme icon variants (sharp emerald, crisp white/monochrome) */
+/* Dark theme icon variants (vibrant cyan #00f7ff, crisp white/monochrome) */
 [data-theme="dark"] .icon-emerald {
-  background: rgba(13, 155, 114, 0.2);
-  border-color: rgba(61, 214, 163, 0.4);
-  color: #3DD6A3;
-  box-shadow: 0 4px 14px rgba(13, 155, 114, 0.25);
+  background: rgba(0, 247, 255, 0.18);
+  border-color: rgba(0, 247, 255, 0.45);
+  color: #00F7FF;
+  box-shadow: 0 4px 14px rgba(0, 247, 255, 0.22);
 }
 
 [data-theme="dark"] .icon-blue {
@@ -568,11 +564,11 @@ button, input, select, textarea {
   color: #FFFFFF;
 }
 
-/* Light theme icon variants (deep emerald, pure crisp black/dark slate) */
+/* Light theme icon variants (deep cyan #00686D with soft cyan tint, pure crisp black/dark slate) */
 [data-theme="light"] .icon-emerald {
-  background: #E8F7F2;
-  border-color: #A7E8D2;
-  color: #0D9B72;
+  background: #E6FBFD;
+  border-color: #A3F1F7;
+  color: #00686D;
 }
 
 [data-theme="light"] .icon-blue {
@@ -602,9 +598,9 @@ button, input, select, textarea {
   align-items: center;
   justify-content: center;
   line-height: 1;
-  background: rgba(13, 155, 114, 0.1);
+  background: rgba(0, 247, 255, 0.12);
   border: 1px solid var(--border);
-  color: var(--brand-emerald);
+  color: var(--brand-cyan);
   box-shadow: var(--shadow-sm);
 }
 
@@ -615,15 +611,15 @@ button, input, select, textarea {
 }
 
 [data-theme="dark"] .empty-state-icon {
-  background: rgba(13, 155, 114, 0.18);
-  border-color: rgba(61, 214, 163, 0.3);
-  color: #3DD6A3;
+  background: rgba(0, 247, 255, 0.18);
+  border-color: rgba(0, 247, 255, 0.4);
+  color: #00F7FF;
 }
 
 [data-theme="light"] .empty-state-icon {
-  background: #E8F7F2;
-  border-color: #A7E8D2;
-  color: #0D9B72;
+  background: #E6FBFD;
+  border-color: #A3F1F7;
+  color: #00686D;
 }
 
 /* 8. Chips & Badges */
@@ -641,7 +637,7 @@ button, input, select, textarea {
 }
 
 .chip-status-open {
-  background: rgba(13, 155, 114, 0.15);
+  background: rgba(0, 247, 255, 0.15);
   color: var(--success-text);
   border-color: rgba(13, 155, 114, 0.35);
 }
@@ -855,7 +851,7 @@ button, input, select, textarea {
   inset: 0;
   border-radius: calc(var(--radius-xl) + 12px);
   padding: 3px;
-  background: linear-gradient(135deg, var(--brand-emerald), var(--brand-emerald), var(--brand-blue));
+  background: linear-gradient(135deg, var(--brand-cyan), var(--brand-cyan-dark), var(--brand-blue));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -870,7 +866,7 @@ button, input, select, textarea {
   inset: 6px;
   border-radius: calc(var(--radius-xl) + 6px);
   padding: 3px;
-  background: linear-gradient(315deg, var(--brand-emerald), var(--brand-blue));
+  background: linear-gradient(315deg, var(--brand-cyan), var(--brand-blue));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;

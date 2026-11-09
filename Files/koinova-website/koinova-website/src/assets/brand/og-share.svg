@@ -6,8 +6,8 @@
       <stop offset="100%" stop-color="#17264A" />
     </linearGradient>
     <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0D9B72" />
-      <stop offset="100%" stop-color="#0A7A59" />
+      <stop offset="0%" stop-color="#00939A" />
+      <stop offset="100%" stop-color="#00F7FF" />
     </linearGradient>
     <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#2563EB" stop-opacity="0.3" />
@@ -20,7 +20,7 @@
 
   <!-- Ambient Glow Circles -->
   <circle cx="1000" cy="150" r="350" fill="url(#blueGlow)" />
-  <circle cx="200" cy="500" r="250" fill="#0D9B72" fill-opacity="0.08" />
+  <circle cx="200" cy="500" r="250" fill="#00F7FF" fill-opacity="0.08" />
 
   <!-- Geometric Node Network Lines -->
   <g stroke="#263558" stroke-width="1.5" opacity="0.6">
@@ -31,26 +31,26 @@
     <line x1="1050" y1="300" x2="980" y2="520" />
     <line x1="980" y1="520" x2="850" y2="400" />
   </g>
-  <circle cx="150" cy="120" r="4" fill="#0D9B72" />
-  <circle cx="350" cy="180" r="4" fill="#3DD6A3" />
+  <circle cx="150" cy="120" r="4" fill="#00F7FF" />
+  <circle cx="350" cy="180" r="4" fill="#00939A" />
   <circle cx="280" cy="340" r="4" fill="#2563EB" />
-  <circle cx="850" cy="400" r="4" fill="#0D9B72" />
-  <circle cx="1050" cy="300" r="4" fill="#3DD6A3" />
+  <circle cx="850" cy="400" r="4" fill="#00F7FF" />
+  <circle cx="1050" cy="300" r="4" fill="#00939A" />
 
   <!-- KOINOVA Mark Container -->
   <g transform="translate(140, 140)">
     <rect width="90" height="90" rx="20" fill="#17264A" stroke="#263558" stroke-width="2" />
     <path d="M26 20 V70 M26 45 L64 22 M42 36 L66 70" stroke="url(#emeraldGrad)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none" />
-    <circle cx="64" cy="22" r="4" fill="#3DD6A3" />
+    <circle cx="64" cy="22" r="4" fill="#00F7FF" />
   </g>
 
   <!-- Typography -->
   <text x="255" y="200" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-size="52" font-weight="800" fill="#EEF2FA" letter-spacing="-1">KOINOVA</text>
   
-  <text x="140" y="300" font-family="'Inter', sans-serif" font-size="20" font-weight="700" fill="#0D9B72" letter-spacing="3" text-transform="uppercase">WHERE FAITH MEETS INNOVATION</text>
+  <text x="140" y="300" font-family="'Inter', sans-serif" font-size="20" font-weight="700" fill="#00F7FF" letter-spacing="3" text-transform="uppercase">WHERE FAITH MEETS INNOVATION</text>
   
   <text x="140" y="380" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-size="44" font-weight="800" fill="#FFFFFF" letter-spacing="-1">Faith-Inspired. Innovation-Driven.</text>
-  <text x="140" y="440" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-size="44" font-weight="800" fill="#3DD6A3" letter-spacing="-1">Impact-Focused.</text>
+  <text x="140" y="440" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-size="44" font-weight="800" fill="#00F7FF" letter-spacing="-1">Impact-Focused.</text>
   
   <text x="140" y="520" font-family="'Inter', sans-serif" font-size="22" fill="#A9B6D0">Connecting, equipping &amp; empowering Christians in technology globally.</text>
 
