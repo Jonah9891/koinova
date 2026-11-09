@@ -52,19 +52,19 @@ button, input, select, textarea {
 }
 
 /* Swap logos between themes:
-   On dark background (dark mode): use koinova-logo-light.png (white/bright mark)
-   On light background (light mode): use koinova-logo-dark.png (dark navy mark) */
-[data-theme="dark"] .logo-dark {
+   Dark background mode: show logo-dark
+   Light background mode: show logo-light */
+[data-theme="dark"] .logo-light {
   display: none !important;
 }
-[data-theme="dark"] .logo-light {
+[data-theme="dark"] .logo-dark {
   display: block !important;
 }
 
-[data-theme="light"] .logo-light {
+[data-theme="light"] .logo-dark {
   display: none !important;
 }
-[data-theme="light"] .logo-dark {
+[data-theme="light"] .logo-light {
   display: block !important;
 }
 
