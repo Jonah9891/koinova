@@ -15,17 +15,58 @@
       <!-- Subtle ambient background glow -->
       <div style="position: absolute; top: 10%; right: 10%; width: 500px; height: 500px; background: var(--glow-blue); pointer-events: none; z-index: 1;"></div>
       
+      <!-- Rwazi-inspired Faded Wireframe Sphere / Global Circles with Tiny Longitude & Latitude Lines -->
+      <div class="hero-globe-sphere" aria-hidden="true">
+        <svg class="hero-globe-svg hero-globe-pulse" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="globeCenterGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="var(--brand-cyan)" stop-opacity="0.12" />
+              <stop offset="60%" stop-color="var(--brand-cyan-dark)" stop-opacity="0.04" />
+              <stop offset="100%" stop-color="var(--brand-cyan)" stop-opacity="0" />
+            </radialGradient>
+          </defs>
+
+          <!-- Core Ambient Glow -->
+          <circle cx="300" cy="300" r="280" fill="url(#globeCenterGlow)" />
+
+          <!-- Outer Concentric Rings -->
+          <circle cx="300" cy="300" r="280" stroke="var(--brand-cyan)" stroke-width="1" stroke-dasharray="3 6" opacity="0.4" />
+          <circle cx="300" cy="300" r="230" stroke="currentColor" stroke-width="0.8" opacity="0.3" />
+          <circle cx="300" cy="300" r="170" stroke="var(--brand-cyan)" stroke-width="1" opacity="0.35" />
+          <circle cx="300" cy="300" r="110" stroke="currentColor" stroke-width="0.8" stroke-dasharray="2 4" opacity="0.25" />
+          <circle cx="300" cy="300" r="50" stroke="var(--brand-cyan)" stroke-width="1.2" opacity="0.5" />
+
+          <!-- Longitude Curves (Global Shape) -->
+          <ellipse cx="300" cy="300" rx="90" ry="280" stroke="currentColor" stroke-width="0.9" opacity="0.35" />
+          <ellipse cx="300" cy="300" rx="180" ry="280" stroke="var(--brand-cyan)" stroke-width="0.9" opacity="0.4" />
+          <ellipse cx="300" cy="300" rx="250" ry="280" stroke="currentColor" stroke-width="0.75" opacity="0.25" />
+
+          <!-- Latitude Horizontal Lines (Tiny Grid) -->
+          <line x1="40" y1="200" x2="560" y2="200" stroke="currentColor" stroke-width="0.75" opacity="0.2" />
+          <line x1="20" y1="300" x2="580" y2="300" stroke="var(--brand-cyan)" stroke-width="1" stroke-dasharray="6 6" opacity="0.45" />
+          <line x1="40" y1="400" x2="560" y2="400" stroke="currentColor" stroke-width="0.75" opacity="0.2" />
+
+          <!-- Micro Orbiting Coordinate Markers -->
+          <circle cx="300" cy="20" r="3" fill="var(--brand-cyan)" opacity="0.7" />
+          <circle cx="300" cy="580" r="3" fill="var(--brand-cyan)" opacity="0.7" />
+          <circle cx="20" cy="300" r="3" fill="var(--brand-cyan)" opacity="0.7" />
+          <circle cx="580" cy="300" r="3" fill="var(--brand-cyan)" opacity="0.7" />
+          <circle cx="480" cy="180" r="2.5" fill="var(--brand-cyan)" opacity="0.8" />
+          <circle cx="120" cy="420" r="2.5" fill="var(--brand-cyan)" opacity="0.8" />
+        </svg>
+      </div>
+      
       <div class="container" style="position: relative; z-index: 2;">
         <div class="split-layout">
           <div>
-            <span class="eyebrow">Faith-Inspired. Innovation-Driven. Impact-Focused.</span>
-            <h1 style="margin: var(--space-4) 0; font-size: clamp(2.5rem, 5.5vw, 4.25rem); line-height: 1.1; letter-spacing: -0.03em;">
+            <span class="eyebrow hero-animated-eyebrow">Faith-Inspired. Innovation-Driven. Impact-Focused.</span>
+            <h1 class="hero-animated-heading" style="margin: var(--space-4) 0; font-size: clamp(2.5rem, 5.5vw, 4.25rem); line-height: 1.1; letter-spacing: -0.03em;">
               Where Faith Meets <span class="gradient-text-blue">Innovation.</span>
             </h1>
-            <p class="lead-text" style="margin-bottom: var(--space-8); max-width: 600px;">
+            <p class="lead-text hero-animated-subheading" style="margin-bottom: var(--space-8); max-width: 600px;">
               KOINOVA is a global Christian technology and innovation ecosystem connecting, equipping and empowering Christians to help build the future.
             </p>
-            <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
+            <div class="hero-animated-cta" style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
               <a href="/get-involved/become-a-member" class="btn btn-cta">JOIN KOINOVA</a>
               <a href="/ecosystem" class="btn btn-secondary">EXPLORE THE ECOSYSTEM</a>
             </div>

@@ -36,8 +36,16 @@ button, input, select, textarea {
   justify-content: space-between;
   max-width: 1280px;
   margin: 0 auto;
-  padding: var(--space-4) var(--space-6);
-  gap: var(--space-4);
+  padding: var(--space-3) var(--space-6);
+  gap: var(--space-3);
+  overflow-x: clip;
+}
+
+@media (max-width: 640px) {
+  .header-container {
+    padding: var(--space-3) var(--space-4);
+    gap: 8px;
+  }
 }
 
 .brand-link {
@@ -47,8 +55,17 @@ button, input, select, textarea {
 }
 
 .brand-logo {
-  height: 38px;
+  height: 30px;
   width: auto;
+  max-width: 140px;
+  object-fit: contain;
+}
+
+@media (max-width: 480px) {
+  .brand-logo {
+    height: 26px;
+    max-width: 120px;
+  }
 }
 
 /* Swap logos between themes:
@@ -162,15 +179,27 @@ button, input, select, textarea {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: var(--space-4);
+  gap: var(--space-2);
+  flex-shrink: 0;
 }
 
 .header-cta-btn {
-  display: none;
+  display: inline-flex;
+  padding: 6px 14px;
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
 }
-@media (min-width: 640px) {
+
+@media (max-width: 480px) {
+  .header-actions {
+    gap: 6px;
+  }
   .header-cta-btn {
-    display: inline-flex;
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+  .theme-toggle-btn {
+    padding: 6px 8px;
   }
 }
 
@@ -347,7 +376,30 @@ button, input, select, textarea {
   background: var(--btn-cta-bg);
   color: var(--btn-cta-text);
   font-weight: 700;
-  box-shadow: 0 4px 18px rgba(13, 155, 114, 0.35);
+  box-shadow: 0 4px 18px rgba(0, 209, 185, 0.35);
+  border: 1px solid transparent;
+}
+
+[data-theme="dark"] .btn-cta {
+  background: #00D1B9;
+  color: #041B18 !important;
+  box-shadow: 0 4px 20px rgba(0, 209, 185, 0.4);
+}
+
+[data-theme="dark"] .btn-cta:hover {
+  background: #26f2db;
+  color: #041B18 !important;
+}
+
+[data-theme="light"] .btn-cta {
+  background: #00695D;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 14px rgba(0, 105, 93, 0.28);
+}
+
+[data-theme="light"] .btn-cta:hover {
+  background: #008273;
+  color: #FFFFFF !important;
 }
 
 .btn-primary {

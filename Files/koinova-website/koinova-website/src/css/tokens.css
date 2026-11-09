@@ -107,9 +107,9 @@
   /* Button Tokens */
   --btn-primary-bg: var(--grad-blue);
   --btn-primary-text: #FFFFFF;
-  --btn-cta-bg: var(--grad-cta);
+  --btn-cta-bg: #00695D;
   --btn-cta-text: #FFFFFF;
-  --btn-emerald-bg: var(--grad-emerald);
+  --btn-emerald-bg: #00695D;
   --btn-emerald-text: #FFFFFF;
 
   --heading-gradient: linear-gradient(90deg, #101C3A, #00939A);
@@ -142,10 +142,10 @@
   /* Button Tokens */
   --btn-primary-bg: var(--grad-blue);
   --btn-primary-text: #FFFFFF;
-  --btn-cta-bg: var(--grad-cta);
-  --btn-cta-text: #051417;
-  --btn-emerald-bg: var(--grad-emerald);
-  --btn-emerald-text: #051417;
+  --btn-cta-bg: #00D1B9;
+  --btn-cta-text: #041B18;
+  --btn-emerald-bg: #00D1B9;
+  --btn-emerald-text: #041B18;
 
   --heading-gradient: linear-gradient(90deg, #EEF2FA, #00F7FF);
 
