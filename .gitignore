@@ -1,0 +1,4 @@
+# Local IDE and environment configuration
+.vscode/
+.DS_Store
+Thumbs.db
