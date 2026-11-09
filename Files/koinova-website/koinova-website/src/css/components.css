@@ -185,35 +185,28 @@ button, input, select, textarea {
 
 .header-cta-btn {
   display: inline-flex;
-  padding: 6px 14px;
-  font-size: 0.8125rem;
+  padding: 5px 12px;
+  font-size: 0.75rem;
   letter-spacing: 0.02em;
+  font-weight: 700;
+  border-radius: var(--radius-full);
 }
 
-@media (max-width: 480px) {
-  .header-actions {
-    gap: 6px;
-  }
-  .header-cta-btn {
-    padding: 5px 10px;
-    font-size: 0.75rem;
-  }
-  .theme-toggle-btn {
-    padding: 6px 8px;
-  }
-}
-
-/* 4. Mobile Menu & Drawer */
 .mobile-menu-btn {
   background: transparent;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  padding: 8px 10px;
+  padding: 6px 8px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
   color: var(--text);
+  flex-shrink: 0;
+  min-width: 32px;
+  min-height: 32px;
 }
 @media (min-width: 1024px) {
   .mobile-menu-btn {
@@ -222,10 +215,29 @@ button, input, select, textarea {
 }
 
 .hamburger-bar {
-  width: 20px;
+  width: 18px;
   height: 2px;
   background-color: var(--text);
   border-radius: 2px;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .header-actions {
+    gap: 4px;
+  }
+  .header-cta-btn {
+    padding: 4px 8px;
+    font-size: 0.6875rem;
+  }
+  .theme-toggle-btn {
+    padding: 4px 6px;
+  }
+  .mobile-menu-btn {
+    padding: 5px 6px;
+    min-width: 28px;
+    min-height: 28px;
+  }
 }
 
 .mobile-nav-drawer {
