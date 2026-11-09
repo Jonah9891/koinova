@@ -104,16 +104,6 @@ function build() {
   copyDirSync(path.join(SRC_DIR, 'js'), path.join(DIST_DIR, 'js'));
   copyDirSync(path.join(SRC_DIR, 'assets'), path.join(DIST_DIR, 'assets'));
 
-  // 5. Also sync to project root for direct local double-clicking
-  copyDirSync(path.join(SRC_DIR, 'css'), path.join(ROOT_DIR, 'css'));
-  copyDirSync(path.join(SRC_DIR, 'js'), path.join(ROOT_DIR, 'js'));
-  copyDirSync(path.join(SRC_DIR, 'assets'), path.join(ROOT_DIR, 'assets'));
-
-  const distIndex = path.join(DIST_DIR, 'index.html');
-  if (fs.existsSync(distIndex)) {
-    fs.copyFileSync(distIndex, path.join(ROOT_DIR, 'index.html'));
-  }
-
   const duration = Date.now() - startTime;
   console.log(`--- Build complete in ${duration}ms ---`);
 }

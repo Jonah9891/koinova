@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node scripts/build.js",
     "dev": "node scripts/dev.js",
+    "preview": "node scripts/preview.js",
     "lint": "eslint src/js scripts",
     "format": "prettier --write \"src/**/*.{html,css,js}\""
   },
